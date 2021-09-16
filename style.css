@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+     background-color: hsl(210, 46%, 95%);
+   
+}
+
+.conteiner {
+    width: 80%;
+    height: 65%;
+    border: 1px solid black;
+    display: grid;
+    grid-auto-rows: repeat(2,minmax(10%,1fr));
+    grid-row-gap:2rem;
+    grid-column-gap:2rem;
+    
+     grid-template-areas: 
+     " Daniel Daniel Jonathan Kira"
+     "Jenette Patrick Patrick Kira"
+  
+}
+
+.conteiner .card{
+  
+    border-radius: 10px;
+}
+.Daniel {
+    grid-area: Daniel;
+    background-color: #733fc8;
+}
+.Jonathan {
+    grid-area: Jonathan;
+    background-color: #49556b;
+}
+.Kira {
+    grid-area: Kira;
+    background-color: #ffffff;
+}
+.Jenette {
+    grid-area: Jenette;
+     background-color: #fff;
+}
+.Patrick {
+    grid-area: Patrick;
+    background-color: #18202d;
+}
