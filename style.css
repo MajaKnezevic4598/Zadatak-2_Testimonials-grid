@@ -20,7 +20,7 @@ body {
 .conteiner {
    
     width: 80%;
-    height: 65%;
+    height: 90%;
     border: 1px solid black;
     display: grid;
     /* grid-template-columns: (4,1fr);
@@ -56,13 +56,24 @@ body {
 .Kira {
     grid-area: Kira;
     background-color: hsl(0, 0%, 100%);
+    color: #4a5261;    
+    text-shadow: 1px 0px 2px #959DA8
     
 }
 .Jenette {
     grid-area: Jenette;
      background-color: #fff;
-     color: #4a5261;    
-    text-shadow: 1px 1px 2px #959DA8;
+    color: #4a5261;    
+    text-shadow: 1px 0px 2px #959DA8;
+}
+.Jenette img, .Kira img {
+    border:1px solid #4a5261
+}
+section header p {
+    opacity: 50%;
+    font-weight: 500;
+    font-size: 0.7rem;
+    margin-top: 2px;
 }
 .Patrick {
     grid-area: Patrick;
@@ -86,7 +97,7 @@ section header {
 
 section header img {
     height: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 50%;
     margin-right: 15px;
    
