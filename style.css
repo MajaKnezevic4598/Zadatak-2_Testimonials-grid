@@ -21,8 +21,8 @@ body {
     width: 80%;
     height: 90%;
     display: grid;
-    grid-template-columns: 22% 22% 22% 22%;
-    grid-template-rows: 44% 44%;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr;
     grid-row-gap:2rem;
     grid-column-gap:2rem;
     grid-template-areas: 
@@ -43,21 +43,37 @@ body {
      position:relative;
     
  }
+
  .quotation{
      position: absolute;
      height: 15vh;
      top:0;
      left:60%;
-     opacity: 70%;
+     /* opacity: 70%; */
+     
+    
  }
+
+/* na background treba da stavim opacity */
+
+.Daniel .opacity-text {
+   
+    
+    opacity: 70%;
+}
 
 .Daniel article p:nth-of-type(2){
     color:  rgb(167, 117, 242);
     
 }
 .Daniel header img{
-    border:2px solid rgb(167, 117, 242)
+    border:2px solid rgb(167, 117, 242);
+
 }
+/* .Daniel .opacity-text {
+    opacity:50%
+} */
+
 .Jonathan {
     grid-area: Jonathan;
     background-color:  hsl(217, 19%, 35%);
@@ -97,7 +113,7 @@ section header p {
 }
 
 section {
-    padding: 1rem;
+padding: 1rem;
   overflow: hidden;
 }
 
@@ -130,7 +146,28 @@ section article p:nth-of-type(2){
 
 }
 
+/* mobile design */
+@media screen and (max-width: 376px){
 
+    .conteiner { 
+   
+    grid-template-areas: 
+    "Daniel"
+    "Jonahtan"
+    "Jenette"
+    "Patrick"
+    "Kira";
+  
+       grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5,1fr);
+      grid-gap: 2rem 0;
+      /*ovde mi pravi problem
+      kao da grid template areas ne radi 
+      kada izvrsim inspekciju grida u browseru ne napravi grid od 
+      jedne koloone i 5 redova*/
+}
+    
+}
 
 
 
